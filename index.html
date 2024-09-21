@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Flotante</title>
+    <!-- Metaetiqueta viewport para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #d5b6b1; /* Rosa pálido */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .sobre {
+            width: 150px;
+            max-width: 80%;
+            height: auto;
+            animation: flotar 3s ease-in-out infinite;
+            cursor: pointer;
+        }
+        @keyframes flotar {
+            0%, 100% {
+                transform: translateY(-10px);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="sobre.png" alt="Sobre Flotante" class="sobre" onclick="abrirFlor()">
+
+    <script>
+        function abrirFlor() {
+            window.location.href = "flor.html";
+        }
+    </script>
+</body>
+</html>

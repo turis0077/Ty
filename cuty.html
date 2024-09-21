@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Flor Amarilla Giratoria</title>
+    <!-- Metaetiqueta viewport para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f5cbc4; /* Fondo claro */
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flor {
+            width: 200px;
+            max-width: 80%;
+            height: auto;
+            animation: girar 5s linear infinite;
+        }
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .texto-explicativo {
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 0 10px;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        @media (max-width: 600px) {
+            .texto-explicativo {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Para Ti, Mi Amor</h1>
+        <img src="am.png" alt="Flor Amarilla" class="flor">
+        <div class="texto-explicativo">
+            <p>
+                Te regalo esta flor amarilla porque simboliza la alegría y la luz que has traído a mi vida. Cada pétalo representa los momentos felices que compartimos y las sonrisas que iluminas en mi rostro. Así como el color amarillo irradia energía y vitalidad, tú llenas mis días de entusiasmo y amor.
+            </p>
+            <p>
+                Espero que esta flor te recuerde siempre lo mucho que significas para mí y cómo juntos hacemos que nuestras vidas florezcan con felicidad y cariño.
+            </p>
+            <p>
+                Te amo con todo mi corazón.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
